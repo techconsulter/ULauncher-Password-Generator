@@ -21,13 +21,13 @@ class KeywordQueryEventListener(EventListener):
     def on_event(self, event, extension):
         items = []
 
-        characters = list(string.ascii_letters + string.digits + '!@#$%^&*()')
+        characters = list(string.ascii_letters + string.digits + '!=@#$%&*?')
         random.shuffle(characters)
 
         for i in range(5):
 
             password = []
-            length = random.randint(12,18)
+            length = random.randint(9,12)
 
             for i in range(length):
                 password.append(random.choice(characters))
