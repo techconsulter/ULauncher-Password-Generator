@@ -24,7 +24,7 @@ class KeywordQueryEventListener(EventListener):
         characters = list(string.ascii_letters + string.digits + '!=@#$%&*?')
         random.shuffle(characters)
 
-        for i in range(5):
+        for i in range(10):
 
             password = []
             length = random.randint(9,12)
